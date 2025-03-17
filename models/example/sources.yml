@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+    - name: stu_dep_dst
+      description: Data from sdd dataset
+      database: sdd
+      schema: stu_dep_dst
+      tables:
+
+          - name: student
+            description: depression data
+            columns:
+              - name: id
+                description: identifier
+                tests:
+                  - not_null
